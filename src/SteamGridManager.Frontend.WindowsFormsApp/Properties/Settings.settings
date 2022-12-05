@@ -1,0 +1,762 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SteamGridManager.Frontend.WindowsFormsApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SteamUserID" Type="System.UInt64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SteamAppPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AppID" Type="System.UInt64" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="View_Show_LibraryCapsule" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="View_Show_HeroGraphic" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="View_Show_Logo" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="View_Show_Header" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="View_Show_Icon" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="View_UseAlternateColumnHeaders" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="List_CacheLocation" Type="SteamGridManager.CacheLocation" Scope="User">
+      <Value Profile="(Default)">UserData</Value>
+    </Setting>
+    <Setting Name="View_Overlay_LibraryCapsule" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="View_Overlay_HeroGraphic" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="View_Overlay_Logo" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="View_Overlay_Header" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="View_Overlay_Icon" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ExternalApplications" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;Title=Run Application
+Location=steam://rungameid/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Run
+Location=steam://run/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Run in Safe Mode
+Location=steam://runsafe/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Show Keys
+Location=steam://cdkeys/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Check System Requirements
+Location=steam://checksysreqs/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Install
+Location=steam://install/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Uninstall
+Location=steam://uninstall/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Validate Game Files
+Location=steam://validate/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Defragment Game Files
+Location=steam://defrag/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Backup
+Location=steam://backup/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Preload
+Location=steam://preload/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Force Input
+Location=steam://forceinputappid/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Details
+Location=steam://nav/games/details/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Game Hub
+Location=steam://url/GameHub/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Workshop
+Location=steam://url/SteamWorkshopPage/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Achievements
+Location=steam://url/SteamIDAchievementsPage/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Open Screenshots
+Location=steam://open/screenshots/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Friends That Play
+Location=steam://url/CommunityFriendsThatPlay/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Advertise
+Location=steam://advertise/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Store
+Location=steam://store/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=News
+Location=steam://appnews/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Update News
+Location=steam://updatenews/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Event Announcements
+Location=steam://url/EventAnnouncementPage/${AppID}/1
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Store App Page
+Location=steam://url/StoreAppPage/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Store DLC Page
+Location=steam://url/StoreDLCPage/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Purchase
+Location=steam://purchase/${AppID}
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+  &lt;string&gt;Title=Refresh Configuration
+Location=steam://flushconfig/
+Arguments=
+StartingDirectory=
+Verb=Run
+AssetTypeNames=none,capsule,hero,logo,header,icon
+&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Details_Asset_MouseLeftClickAction" Type="SteamGridManager.AssetAction" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Details_Asset_MouseLeftDoubleClickAction" Type="SteamGridManager.AssetAction" Scope="User">
+      <Value Profile="(Default)">Preview</Value>
+    </Setting>
+    <Setting Name="Details_Asset_MouseMiddleClickAction" Type="SteamGridManager.AssetAction" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Details_Asset_MouseMiddleDoubleClickAction" Type="SteamGridManager.AssetAction" Scope="User">
+      <Value Profile="(Default)">Open</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_Asset_Preview_BackColor_CustomColors" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="List_Assets_Exist_String" Type="System.String" Scope="User">
+      <Value Profile="(Default)">✓</Value>
+    </Setting>
+    <Setting Name="List_Assets_Missing_String" Type="System.String" Scope="User">
+      <Value Profile="(Default)">✗</Value>
+    </Setting>
+    <Setting Name="List_Assets_Exist_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Blue</Value>
+    </Setting>
+    <Setting Name="List_Assets_Missing_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Red</Value>
+    </Setting>
+    <Setting Name="StartupCacheLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NonSteamAppIconCachePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AllowProgramsAsIcon" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="BackupPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ConfigurationVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0.0</Value>
+    </Setting>
+    <Setting Name="AutoDownloadMissingAssets" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Details_CacheLocation" Type="SteamGridManager.CacheLocation" Scope="User">
+      <Value Profile="(Default)">UserData, LibraryCache</Value>
+    </Setting>
+    <Setting Name="Details_Progress_MinFileSizeThreshold" Type="System.Int64" Scope="User">
+      <Value Profile="(Default)">65536</Value>
+    </Setting>
+    <Setting Name="Toggles" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="IsReady" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="View_List_SortBy" Type="SteamGridManager.ColumnHeaderType" Scope="User">
+      <Value Profile="(Default)">Title</Value>
+    </Setting>
+    <Setting Name="View_List_SortOrder" Type="System.Windows.Forms.SortOrder" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="View_List_Filter" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CustomColors" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_UserData_LibraryCapsule_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_UserData_HeroGraphic_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_UserData_Logo_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_UserData_Header_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_UserData_Icon_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_LibraryCache_LibraryCapsule_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_LibraryCache_HeroGraphic_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_LibraryCache_Logo_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_LibraryCache_Header_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_LibraryCache_Icon_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="View_StatusBar_Show" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Database_AppInfo_LoadAtStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Database_Shortcuts_LoadAtStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PropertiesDialog_StartMaximized" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_AppAction" Type="SteamGridManager.AppAction" Scope="User">
+      <Value Profile="(Default)">Properties</Value>
+    </Setting>
+    <Setting Name="List_VdfFilter_Prefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vdf:</Value>
+    </Setting>
+    <Setting Name="List_Column_AppID_MinAutoWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="List_Column_AppID_MaxAutoWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">140</Value>
+    </Setting>
+    <Setting Name="List_Column_Title_MinAutoWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="List_Column_Title_MaxAutoWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">600</Value>
+    </Setting>
+    <Setting Name="List_Filter_RestoreAtStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_MouseLeftDoubleClickAction" Type="SteamGridManager.PreviewAction" Scope="User">
+      <Value Profile="(Default)">ToggleImageSizeMode</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_MouseMiddleClickAction" Type="SteamGridManager.PreviewAction" Scope="User">
+      <Value Profile="(Default)">Close</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_MouseRightClickAction" Type="SteamGridManager.PreviewAction" Scope="User">
+      <Value Profile="(Default)">ChooseBackgroundColor</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_MouseLeftClickAction" Type="SteamGridManager.PreviewAction" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_MouseMiddleDoubleClickAction" Type="SteamGridManager.PreviewAction" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_MouseRightDoubleClickAction" Type="SteamGridManager.PreviewAction" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="List_Column_Order" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="List_Column_Types" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_Object_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Blue</Value>
+    </Setting>
+    <Setting Name="PropertyEditor_PersistTextSettings" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PropertyEditor_AllowTabs" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PropertyEditor_AllowNewLines" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_VdfFilter_UseRegularExpressions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="List_VdfFilter_MatchCase" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="List_VdfFilter_MatchWholeWord" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="VdfPropertyType_Object_KnownPaths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;appinfo&lt;/string&gt;
+  &lt;string&gt;appinfo/common&lt;/string&gt;
+  &lt;string&gt;appinfo/extended&lt;/string&gt;
+  &lt;string&gt;appinfo/config&lt;/string&gt;
+  &lt;string&gt;appinfo/depots&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="VdfPropertyType_String_KnownPaths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;appinfo/common/clienttga&lt;/string&gt;
+  &lt;string&gt;appinfo/common/name&lt;/string&gt;
+  &lt;string&gt;appinfo/common/icon&lt;/string&gt;
+  &lt;string&gt;appinfo/common/logo&lt;/string&gt;
+  &lt;string&gt;appinfo/common/logo_small&lt;/string&gt;
+  &lt;string&gt;appinfo/common/clienticon&lt;/string&gt;
+  &lt;string&gt;appinfo/common/metacritic_url&lt;/string&gt;
+  &lt;string&gt;appinfo/common/metacritic_name&lt;/string&gt;
+  &lt;string&gt;appinfo/common/metacritic_score&lt;/string&gt;
+  &lt;string&gt;appinfo/common/metacritic_fullurl&lt;/string&gt;
+  &lt;string&gt;appinfo/common/sortas&lt;/string&gt;
+  &lt;string&gt;appinfo/common/type&lt;/string&gt;
+  &lt;string&gt;appinfo/common/eulas/\d+/url&lt;/string&gt;
+  &lt;string&gt;appinfo/common/eulas/\d+/id&lt;/string&gt;
+  &lt;string&gt;appinfo/common/eulas/\d+/name&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/tests/\d+/token&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/supported_input&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/recommended_runtime&lt;/string&gt;
+  &lt;string&gt;appinfo/common/small_capsule/\w+&lt;/string&gt;
+  &lt;string&gt;appinfo/common/header_image/\w+&lt;/string&gt;
+  &lt;string&gt;appinfo/common/library_assets/library_capsule&lt;/string&gt;
+  &lt;string&gt;appinfo/common/library_assets/library_hero&lt;/string&gt;
+  &lt;string&gt;appinfo/common/library_assets/library_logo&lt;/string&gt;
+  &lt;string&gt;appinfo/common/library_assets/logo_position/pinned_position&lt;/string&gt;
+  &lt;string&gt;appinfo/common/associations/\d+/type&lt;/string&gt;
+  &lt;string&gt;appinfo/common/associations/\d+/name&lt;/string&gt;
+  &lt;string&gt;appinfo/common/supported_languages/\w+/supported&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/cwdoverride&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/developer&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/gamedir&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/homepage&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/icon&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/installscript&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/launcheula&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/serverbrowsername&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/state&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/developer_url&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/publisher&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/gamemanualurl&lt;/string&gt;
+  &lt;string&gt;appinfo/config/installdir&lt;/string&gt;
+  &lt;string&gt;appinfo/config/launch/\d+/executable&lt;/string&gt;
+  &lt;string&gt;appinfo/config/launch/\d+/workingdir&lt;/string&gt;
+  &lt;string&gt;appinfo/config/installscriptsignature&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/\d+/name&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/\d+/config/language&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/branches/\w+/description&lt;/string&gt;
+  &lt;string&gt;appinfo/ufs/savefiles/\d+/root&lt;/string&gt;
+  &lt;string&gt;appinfo/ufs/savefiles/\d+/path&lt;/string&gt;
+  &lt;string&gt;appinfo/ufs/savefiles/\d+/pattern&lt;/string&gt;
+  &lt;string&gt;appinfo/ufs/savefiles/\d+/platforms/\d+&lt;/string&gt;
+  &lt;string&gt;appname&lt;/string&gt;
+  &lt;string&gt;exe&lt;/string&gt;
+  &lt;string&gt;StartDir&lt;/string&gt;
+  &lt;string&gt;icon&lt;/string&gt;
+  &lt;string&gt;ShortcutPath&lt;/string&gt;
+  &lt;string&gt;LaunchOptions&lt;/string&gt;
+  &lt;string&gt;DevkitGameID&lt;/string&gt;
+  &lt;string&gt;FlatpakAppID&lt;/string&gt;
+  &lt;string&gt;tags/\d+&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="VdfPropertyType_UInt_KnownPaths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;appinfo/appid&lt;/string&gt;
+  &lt;string&gt;appinfo/common/primary_genre&lt;/string&gt;
+  &lt;string&gt;appinfo/common/gameid&lt;/string&gt;
+  &lt;string&gt;appinfo/common/review_score&lt;/string&gt;
+  &lt;string&gt;appinfo/common/review_percentage&lt;/string&gt;
+  &lt;string&gt;appinfo/common/metacritic_score&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/tested_build_id&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/tests/\d+/display&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/tested_build_id&lt;/string&gt;
+  &lt;string&gt;appinfo/common/library_assets/logo_position/width_pct&lt;/string&gt;
+  &lt;string&gt;appinfo/common/library_assets/logo_position/height_pct&lt;/string&gt;
+  &lt;string&gt;appinfo/common/genres/\d+&lt;/string&gt;
+  &lt;string&gt;appinfo/common/store_tags/\d+&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/primarycache&lt;/string&gt;
+  &lt;string&gt;appinfo/config/contenttype&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/\d+/maxsize&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/\d+/manifests/public&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/branches/\w+/buildid&lt;/string&gt;
+  &lt;string&gt;appinfo/ufs/quota&lt;/string&gt;
+  &lt;string&gt;appinfo/ufs/maxnumfiles&lt;/string&gt;
+  &lt;string&gt;appid&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="VdfPropertyType_Boolean_KnownPaths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/requires_manual_keyboard_invoke&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/requires_non_controller_launcher_nav&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/primary_player_is_controller_slot_0&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/non_deck_display_glyphs&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/small_text&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/requires_internet_for_setup&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/requires_internet_for_singleplayer&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/requires_h264&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/configuration/gamescope_frame_limiter_not_supported&lt;/string&gt;
+  &lt;string&gt;appinfo/common/community_hub_visible&lt;/string&gt;
+  &lt;string&gt;appinfo/common/category/category_\d+&lt;/string&gt;
+  &lt;string&gt;appinfo/common/supported_languages/\w+/supported&lt;/string&gt;
+  &lt;string&gt;appinfo/common/supported_languages/\w+/full_audio&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/noservers&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/order&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/showcdkeyinmenu&lt;/string&gt;
+  &lt;string&gt;appinfo/extended/hadthirdpartycdkey&lt;/string&gt;
+  &lt;string&gt;appinfo/config/installscriptoverride&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/overridescddb&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/systemdefined&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/branches/\w+/pwdrequired&lt;/string&gt;
+  &lt;string&gt;appinfo/ufs/savefiles/\d+/recursive&lt;/string&gt;
+  &lt;string&gt;IsHidden&lt;/string&gt;
+  &lt;string&gt;AllowDesktopConfig&lt;/string&gt;
+  &lt;string&gt;AllowOverlay&lt;/string&gt;
+  &lt;string&gt;openvr&lt;/string&gt;
+  &lt;string&gt;Devkit&lt;/string&gt;
+  &lt;string&gt;DevkitOverrideAppID&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="VdfPropertyType_RelativeTime_KnownPaths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;appinfo/common/steam_deck_compatibility/test_timestamp&lt;/string&gt;
+  &lt;string&gt;appinfo/common/store_asset_mtime&lt;/string&gt;
+  &lt;string&gt;appinfo/common/original_release_date&lt;/string&gt;
+  &lt;string&gt;appinfo/common/steam_release_date&lt;/string&gt;
+  &lt;string&gt;appinfo/depots/branches/\w+/timeupdated&lt;/string&gt;
+  &lt;string&gt;LastPlayTime&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_String_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlText</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_UInt_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlText</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_Boolean_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlText</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_RelativeTime_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlText</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_Boolean_FormatAsString" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_Boolean_FalseString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_Boolean_TrueString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">true</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_UInt_CultureName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="VdfDefinition_UInt_Culture" Type="SteamGridManager.VdfDefinitionUIntCulture" Scope="User">
+      <Value Profile="(Default)">Invariant</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_Enum_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlText</Value>
+    </Setting>
+    <Setting Name="VdfDefinition_RelativeTime_Format" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="VdfPropertyType_Enum_KnownPaths" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="WindowTheme" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="VdfDefinition_RelativeTime_Culture" Type="SteamGridManager.VdfDefinitionUIntCulture" Scope="User">
+      <Value Profile="(Default)">Current</Value>
+    </Setting>
+    <Setting Name="DateTimePicker_UseVdfDefinitionFormat" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DateTimePicker_CustomFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DateTimePicker_Format" Type="System.Windows.Forms.DateTimePickerFormat" Scope="User">
+      <Value Profile="(Default)">Long</Value>
+    </Setting>
+    <Setting Name="View_List_CustomSortBy" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Details_DragAndDrop_ValidDrop_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">LightSkyBlue</Value>
+    </Setting>
+    <Setting Name="Details_DragAndDrop_InvalidDrop_Color" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">OrangeRed</Value>
+    </Setting>
+    <Setting Name="Details_Asset_Preview_BackColor_ShowMenu" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Details_BackColor" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="Details_Asset_MouseRightClickAction" Type="SteamGridManager.AssetAction" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Details_Asset_MouseRightDoubleClickAction" Type="SteamGridManager.AssetAction" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="Details_Asset_BorderActivation" Type="SteamGridManager.AssetBorder" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="PropertiesDialog_DefaultAction" Type="SteamGridManager.VdfPropertyAction" Scope="User">
+      <Value Profile="(Default)">Edit</Value>
+    </Setting>
+    <Setting Name="PropertiesDialog_ObjectAction" Type="SteamGridManager.VdfPropertyAction" Scope="User">
+      <Value Profile="(Default)">Open</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_Order" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;totalCount&lt;/string&gt;
+  &lt;string&gt;selectionCount&lt;/string&gt;
+  &lt;string&gt;status&lt;/string&gt;
+  &lt;string&gt;dataProvider&lt;/string&gt;
+  &lt;string&gt;sortBy&lt;/string&gt;
+  &lt;string&gt;sortOrder&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_TotalCount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_UnknownAppSubCount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_AppSubCount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_ShortcutSubCount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_SelectionCount" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_Status" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_DataProvider" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_SortBy" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="List_Status_Part_SortOrder" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Details_Filter_AutoCommit_Delay" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="List_Filter_AutoCommit_Delay" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="Details_Filter_AutoCommit_Enable" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_Filter_AutoCommit_Enable" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UI_Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UI_Culture" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Overlays_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Localization_Path" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="List_Menu_VdfColumn_AllowSelectPath" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_Menu_VdfColumn_ShowAllFilters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Database_AppInfo_AllowSaving" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Asset_NonSteamAppIcon_NameSuffix" Type="System.String" Scope="User">
+      <Value Profile="(Default)">i</Value>
+    </Setting>
+    <Setting Name="PropertyEditor_CopyTextFormat_Single" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{Value}</Value>
+    </Setting>
+    <Setting Name="PropertyEditor_CopyTextFormat_Many" Type="System.String" Scope="User">
+      <Value Profile="(Default)">{Key} : {Value}</Value>
+    </Setting>
+    <Setting Name="IconConversion_UseClosest" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="IconConversion_SaveIconEntry" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IconConversion_SaveIconEntries" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Details_RestoreAppIDAtStart" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="NonSteamAppIcon_AllowDirectLinks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NonSteamAppIcon_AutoExtract" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Asset_DeleteAllVariantsBeforeCopy" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Details_WatchFileChanges" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="List_WatchFileChanges" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Details_WatchFileChangesSimple" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C0431CD-F51D-42F5-BC05-39B6D09182C5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SteamGridManager.Frontend.WindowsFormsApp</RootNamespace>
+    <AssemblyName>SteamGridManager.Frontend.WindowsFormsApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\SteamGridManager.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppPropertiesDialog.Designer.cs">
+      <DependentUpon>AppPropertiesDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\ListViewExtensionMethods.cs" />
+    <Compile Include="Extensions\TextBoxExtensionMethods.cs" />
+    <Compile Include="Extensions\ExternalApplicationExtensionMethods.cs" />
+    <Compile Include="Helpers\ExternalApplicationUtils.cs" />
+    <Compile Include="Helpers\AssetOverlayUtils.cs" />
+    <Compile Include="Options\Forms\ExternalApplicationEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\Forms\ExternalApplicationEditorDialog.Designer.cs">
+      <DependentUpon>ExternalApplicationEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Forms\EditMutiStringCollectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options\Forms\EditMutiStringCollectionDialog.Designer.cs">
+      <DependentUpon>EditMutiStringCollectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\DatabaseSettingBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\DatabaseSettingBox.Designer.cs">
+      <DependentUpon>DatabaseSettingBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\EnvironmentDatabaseOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\EnvironmentDatabaseOptionsPanel.Designer.cs">
+      <DependentUpon>EnvironmentDatabaseOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDetailsGeneralOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDetailsGeneralOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceDetailsGeneralOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDetailsPreviewOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDetailsPreviewOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceDetailsPreviewOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\IntegrationExternalApplicationsOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\IntegrationExternalApplicationsOptionsPanel.Designer.cs">
+      <DependentUpon>IntegrationExternalApplicationsOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceListColumnsOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceListColumnsOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceListColumnsOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceListFilterOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceListFilterOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceListFilterOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceListGeneralOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceListGeneralOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceListGeneralOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDialogPropertiesOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDialogPropertiesOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceDialogPropertiesOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDialogPropertyOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDialogPropertyOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceDialogPropertyOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionBooleanOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionBooleanOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceVdfDefinitionBooleanOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionEnumerationOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionEnumerationOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceVdfDefinitionEnumerationOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionObjectOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionObjectOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceVdfDefinitionObjectOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionGeneralOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\EnvironmentVdfDefinitionGeneralOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceVdfDefinitionGeneralOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionRelativeTimeOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionRelativeTimeOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceVdfDefinitionRelativeTimeOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionStringOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionStringOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceVdfDefinitionStringOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionUIntOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceVdfDefinitionUIntOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceVdfDefinitionUIntOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\ColorBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\ColorBox.Designer.cs">
+      <DependentUpon>ColorBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\ColorComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\ColorComboBox.Designer.cs">
+      <DependentUpon>ColorComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\DateTimeFormatBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\DateTimeFormatBox.Designer.cs">
+      <DependentUpon>DateTimeFormatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\DetailsPanelOptionGroupBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\DetailsPanelOptionGroupBox.Designer.cs">
+      <DependentUpon>DetailsPanelOptionGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\MouseActionGroupBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\MouseActionGroupBox.Designer.cs">
+      <DependentUpon>MouseActionGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\StringCollectionListBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\StringCollectionListBox.Designer.cs">
+      <DependentUpon>StringCollectionListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteamGridManager\AppAction.cs" />
+    <Compile Include="SteamGridManager\AssetBorder.cs" />
+    <Compile Include="SteamGridManager\AssetFileWatcherSystem.cs" />
+    <Compile Include="SteamGridManager\ColumnHeaderType.cs" />
+    <Compile Include="Options\Panels\InterfaceDialogPromptsOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\InterfaceDialogPromptsOptionsPanel.Designer.cs">
+      <DependentUpon>InterfaceDialogPromptsOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\UserControls\PathBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\UserControls\PathBox.Designer.cs">
+      <DependentUpon>PathBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteamGridManager\AssetOverlay.cs" />
+    <Compile Include="SteamGridManager\AssetOverlayVariant.cs" />
+    <Compile Include="SteamGridManager\AssetType.cs" />
+    <Compile Include="SteamGridManager\CacheLocation.cs" />
+    <Compile Include="SteamGridManager\AssetAction.cs" />
+    <Compile Include="Extensions\ControlExtensionMethods.cs" />
+    <Compile Include="Helpers\DataObjectHelpers.cs" />
+    <Compile Include="Helpers\IconExtractorUtils.cs" />
+    <Compile Include="Helpers\IconExtractor.cs" />
+    <Compile Include="Helpers\Tga.cs" />
+    <Compile Include="Options\Panels\EnvironmentPathsOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\EnvironmentPathsOptionsPanel.Designer.cs">
+      <DependentUpon>EnvironmentPathsOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteamGridManager\CustomColorsCollection.cs" />
+    <Compile Include="SteamGridManager\PreviewAction.cs" />
+    <Compile Include="SteamGridManager\ToggleCollection.cs" />
+    <Compile Include="SteamGridManager\VdfDefinitionUIntCulture.cs" />
+    <Compile Include="SteamGridManager\VdfEnum.cs" />
+    <Compile Include="SteamGridManager\VdfEnumCollection.cs" />
+    <Compile Include="SteamGridManager\VdfPropertyAction.cs" />
+    <Compile Include="Steam\Vdf\AcfWriter.cs" />
+    <Compile Include="Steam\Vdf\AppType.cs" />
+    <Compile Include="SteamGridManager\AssetOverlayCollection.cs" />
+    <Compile Include="ComboBoxDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComboBoxDialog.Designer.cs">
+      <DependentUpon>ComboBoxDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options\Panels\EnvironmentGeneralOptionsPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Options\Panels\EnvironmentGeneralOptionsPanel.Designer.cs">
+      <DependentUpon>EnvironmentGeneralOptionsPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Steam\Vdf\AppReleaseState.cs" />
+    <Compile Include="Steam\Vdf\Universe.cs" />
+    <Compile Include="OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OptionsDialog.Designer.cs">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteamGridManager\ExternalApplication.cs" />
+    <Compile Include="SteamGridManager\ExternalApplicationCollection.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Helpers\SteamUtils.cs" />
+    <Compile Include="Steam\Vdf\AppInfo.cs" />
+    <Compile Include="Steam\Vdf\AppInfoData.cs" />
+    <Compile Include="Steam\Vdf\AppInfos.cs" />
+    <Compile Include="Steam\Vdf\AppInfosReader.cs" />
+    <Compile Include="Steam\Vdf\LibraryAssets.cs" />
+    <Compile Include="Steam\Vdf\LogoPosition.cs" />
+    <Compile Include="Steam\Vdf\Shortcut.cs" />
+    <Compile Include="Steam\Vdf\Shortcuts.cs" />
+    <Compile Include="Steam\Vdf\VdfObject.cs" />
+    <Compile Include="Steam\Vdf\VdfReader.cs" />
+    <Compile Include="Steam\Vdf\VdfWriter.cs" />
+    <Compile Include="UserControls\VdfObjectPropertyListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\VdfObjectPropertyListView.Designer.cs">
+      <DependentUpon>VdfObjectPropertyListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserPictureBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserPictureBox.Designer.cs">
+      <DependentUpon>UserPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserPictureBoxGroup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UserPictureBoxGroup.Designer.cs">
+      <DependentUpon>UserPictureBoxGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VdfPropertyEditorDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VdfPropertyEditorDialog.Designer.cs">
+      <DependentUpon>VdfPropertyEditorDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\VdfUtils.cs" />
+    <EmbeddedResource Include="AppPropertiesDialog.resx">
+      <DependentUpon>AppPropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComboBoxDialog.resx">
+      <DependentUpon>ComboBoxDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Forms\ExternalApplicationEditorDialog.resx">
+      <DependentUpon>ExternalApplicationEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Forms\EditMutiStringCollectionDialog.resx">
+      <DependentUpon>EditMutiStringCollectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\UserControls\DatabaseSettingBox.resx">
+      <DependentUpon>DatabaseSettingBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\EnvironmentDatabaseOptionsPanel.resx">
+      <DependentUpon>EnvironmentDatabaseOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceDetailsGeneralOptionsPanel.resx">
+      <DependentUpon>InterfaceDetailsGeneralOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceDetailsPreviewOptionsPanel.resx">
+      <DependentUpon>InterfaceDetailsPreviewOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\IntegrationExternalApplicationsOptionsPanel.resx">
+      <DependentUpon>IntegrationExternalApplicationsOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\EnvironmentGeneralOptionsPanel.resx">
+      <DependentUpon>EnvironmentGeneralOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceListColumnsOptionsPanel.resx">
+      <DependentUpon>InterfaceListColumnsOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceListFilterOptionsPanel.resx">
+      <DependentUpon>InterfaceListFilterOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceListGeneralOptionsPanel.resx">
+      <DependentUpon>InterfaceListGeneralOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\EnvironmentPathsOptionsPanel.resx">
+      <DependentUpon>EnvironmentPathsOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceDialogPromptsOptionsPanel.resx">
+      <DependentUpon>InterfaceDialogPromptsOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceDialogPropertiesOptionsPanel.resx">
+      <DependentUpon>InterfaceDialogPropertiesOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceDialogPropertyOptionsPanel.resx">
+      <DependentUpon>InterfaceDialogPropertyOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceVdfDefinitionBooleanOptionsPanel.resx">
+      <DependentUpon>InterfaceVdfDefinitionBooleanOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceVdfDefinitionEnumerationOptionsPanel.resx">
+      <DependentUpon>InterfaceVdfDefinitionEnumerationOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceVdfDefinitionObjectOptionsPanel.resx">
+      <DependentUpon>InterfaceVdfDefinitionObjectOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\EnvironmentVdfDefinitionGeneralOptionsPanel.resx">
+      <DependentUpon>InterfaceVdfDefinitionGeneralOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceVdfDefinitionRelativeTimeOptionsPanel.resx">
+      <DependentUpon>InterfaceVdfDefinitionRelativeTimeOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceVdfDefinitionStringOptionsPanel.resx">
+      <DependentUpon>InterfaceVdfDefinitionStringOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\Panels\InterfaceVdfDefinitionUIntOptionsPanel.resx">
+      <DependentUpon>InterfaceVdfDefinitionUIntOptionsPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\UserControls\ColorBox.resx">
+      <DependentUpon>ColorBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\UserControls\DateTimeFormatBox.resx">
+      <DependentUpon>DateTimeFormatBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\UserControls\DetailsPanelOptionGroupBox.resx">
+      <DependentUpon>DetailsPanelOptionGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\UserControls\MouseActionGroupBox.resx">
+      <DependentUpon>MouseActionGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\UserControls\PathBox.resx">
+      <DependentUpon>PathBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options\UserControls\StringCollectionListBox.resx">
+      <DependentUpon>StringCollectionListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserControls\VdfObjectPropertyListView.resx">
+      <DependentUpon>VdfObjectPropertyListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserPictureBox.resx">
+      <DependentUpon>UserPictureBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UserPictureBoxGroup.resx">
+      <DependentUpon>UserPictureBoxGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VdfPropertyEditorDialog.resx">
+      <DependentUpon>VdfPropertyEditorDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SteamGridManager.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
