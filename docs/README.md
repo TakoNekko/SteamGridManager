@@ -21,7 +21,7 @@ A GUI application to manage Steam grids.
 - Optionally downloads all missing icon files
 - Support for custom user overlays (e.g., grid and hero guidelines)
 - Optionally loads and updates Steam application and non-Steam shortcut databases
-- Built-in editor for Steam dabatases
+- Built-in editor for Steam databases
 - Advanced user filtering (e.g., `vdf:appinfo/extended/gamemanualurl` to show all apps with an existing game manual URL)
 - Can be extended with user-defined external applications
 
