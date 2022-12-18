@@ -1428,28 +1428,7 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.UserControls
 
 		private void copyToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			var dataObject = new DataObject();
-
-			if (pictureBox.BackgroundImage != null)
-			{
-				dataObject.SetImage(pictureBox.BackgroundImage);
-			}
-
-			if (!string.IsNullOrEmpty(ResolvedPath))
-			{
-				var filePaths = new StringCollection
-				{
-					ResolvedPath
-				};
-
-				dataObject.SetFileDropList(filePaths);
-			}
-
-			if (dataObject.ContainsImage()
-				|| dataObject.ContainsFileDropList())
-			{
-				Clipboard.SetDataObject(dataObject);
-			}
+			Copy();
 		}
 
 		private void fromFileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1515,6 +1494,39 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.UserControls
 		#endregion
 
 		#region Commands
+
+		private DataObject GetCopy()
+		{
+			var dataObject = new DataObject();
+
+			if (pictureBox.BackgroundImage != null)
+			{
+				dataObject.SetImage(pictureBox.BackgroundImage);
+			}
+
+			if (!string.IsNullOrEmpty(ResolvedPath))
+			{
+				var filePaths = new StringCollection
+				{
+					ResolvedPath
+				};
+
+				dataObject.SetFileDropList(filePaths);
+			}
+
+			return dataObject;
+		}
+
+		private void Copy()
+		{
+			var dataObject = GetCopy();
+
+			if (dataObject.ContainsImage()
+				|| dataObject.ContainsFileDropList())
+			{
+				Clipboard.SetDataObject(dataObject);
+			}
+		}
 
 		private void PerformNoAssetAction()
 		{
