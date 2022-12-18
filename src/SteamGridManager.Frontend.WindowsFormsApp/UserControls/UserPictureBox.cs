@@ -190,6 +190,8 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.UserControls
 
 		#region Constructors
 
+		private bool isDragging;
+
 		public UserPictureBox()
 		{
 			InitializeComponent();
@@ -854,6 +856,31 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.UserControls
 		private void pictureBox_MouseDoubleClick(object sender, MouseEventArgs e)
 		{
 			innerPanel_MouseDoubleClick(innerPanel, new MouseEventArgs(e.Button, e.Clicks, e.X, e.Y, e.Delta));
+		}
+
+		private void pictureBox_QueryContinueDrag(object sender, QueryContinueDragEventArgs e)
+		{
+			if (e.EscapePressed)
+			{
+				isDragging = false;
+				e.Action = DragAction.Cancel;
+			}
+			else if (e.Action == DragAction.Drop)
+			{
+				isDragging = false;
+			}
+		}
+
+		private void pictureBox_MouseMove(object sender, MouseEventArgs e)
+		{
+			if (e.Button == MouseButtons.Left)
+			{
+				if (!isDragging)
+				{
+					isDragging = true;
+					pictureBox.DoDragDrop(GetCopy(), DragDropEffects.All);
+				}
+			}
 		}
 
 		#endregion

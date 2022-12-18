@@ -303,8 +303,10 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.UserControls
 			this.pictureBox.TabStop = false;
 			this.pictureBox.Visible = false;
 			this.pictureBox.BackgroundImageChanged += new System.EventHandler(this.pictureBox_BackgroundImageChanged);
+			this.pictureBox.QueryContinueDrag += new System.Windows.Forms.QueryContinueDragEventHandler(this.pictureBox_QueryContinueDrag);
 			this.pictureBox.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseClick);
 			this.pictureBox.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseDoubleClick);
+			this.pictureBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox_MouseMove);
 			// 
 			// errorLabel
 			// 
