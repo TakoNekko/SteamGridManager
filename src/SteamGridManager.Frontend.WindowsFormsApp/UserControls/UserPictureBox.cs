@@ -1539,6 +1539,7 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.UserControls
 				};
 
 				dataObject.SetFileDropList(filePaths);
+				dataObject.SetText(ResolvedPath);
 			}
 
 			return dataObject;
