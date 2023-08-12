@@ -11,6 +11,7 @@ namespace Steam.Vdf
 		public ulong PicsToken { get; set; }
 		public IReadOnlyList<byte> Hash { get; set; }
 		public uint ChangeNumber { get; set; }
+		public IReadOnlyList<byte> Hash2 { get; set; }
 
 		public VdfObject Node { get; set; }
 	}

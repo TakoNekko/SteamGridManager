@@ -27,8 +27,9 @@ namespace Steam.Vdf
 				using (var binaryReader = new BinaryReader(fileStream))
 				{
 					var signature = binaryReader.ReadUInt32();
+					var version = signature & 0x000000FF;
 
-					if (signature != KnownSignature)
+					if ((signature & 0xFFFFFF00) != (KnownSignature & 0xFFFFFF00))
 					{
 						throw new InvalidDataException($"Invalid file signature. Got 0x{signature:x8}. Expected 0x{KnownSignature:x8}.");
 					}
@@ -53,6 +54,7 @@ namespace Steam.Vdf
 							PicsToken = binaryReader.ReadUInt64(),
 							Hash = binaryReader.ReadBytes(20),
 							ChangeNumber = binaryReader.ReadUInt32(),
+							Hash2 = version >= 28 ? binaryReader.ReadBytes(20) : new byte[20],
 							Node = vdfReader.ReadObject(),
 						};
 
