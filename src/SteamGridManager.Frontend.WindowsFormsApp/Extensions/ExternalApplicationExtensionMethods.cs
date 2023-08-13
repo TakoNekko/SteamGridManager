@@ -119,7 +119,7 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.Extensions.ExternalApplicati
 									}
 									else if (shortcut != null)
 									{
-										appName = (string)shortcut?.Node?.FindValueByPath("appname");
+										appName = (string)shortcut?.Node?.FindValueByPath("appname") ?? (string)shortcut?.Node?.FindValueByPath("AppName");
 									}
 
 									return appName;

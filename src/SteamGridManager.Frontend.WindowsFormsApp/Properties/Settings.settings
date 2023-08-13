@@ -487,9 +487,12 @@ AssetTypeNames=none,capsule,hero,logo,header,icon
   &lt;string&gt;appinfo/ufs/savefiles/\d+/pattern&lt;/string&gt;
   &lt;string&gt;appinfo/ufs/savefiles/\d+/platforms/\d+&lt;/string&gt;
   &lt;string&gt;appname&lt;/string&gt;
+  &lt;string&gt;AppName&lt;/string&gt;
   &lt;string&gt;exe&lt;/string&gt;
+  &lt;string&gt;Exe&lt;/string&gt;
   &lt;string&gt;StartDir&lt;/string&gt;
   &lt;string&gt;icon&lt;/string&gt;
+  &lt;string&gt;Icon&lt;/string&gt;
   &lt;string&gt;ShortcutPath&lt;/string&gt;
   &lt;string&gt;LaunchOptions&lt;/string&gt;
   &lt;string&gt;DevkitGameID&lt;/string&gt;

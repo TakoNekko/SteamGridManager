@@ -3029,6 +3029,7 @@ namespace SteamGridManager.Frontend.WindowsFormsApp
 				{
 					var appName = (string)appInfo?.Data?.Node?.FindValueByPath("appinfo/common/name")
 						?? (string)shortcut?.Node?.FindValueByPath("appname")
+						?? (string)shortcut?.Node?.FindValueByPath("AppName")
 						?? "";
 
 					listViewSubItems.Add(new ListViewItem.ListViewSubItem { Text = appName, Tag = appName });
@@ -3475,13 +3476,13 @@ namespace SteamGridManager.Frontend.WindowsFormsApp
 				var hasAnyValidProvider = false;
 
 				if (shortcutIconProvider.HasFlag(ShortcutIconProvider.Custom)
-					&& !string.IsNullOrEmpty(Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("icon"))))
+					&& !string.IsNullOrEmpty(Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("icon") ?? shortcut.Node.GetString("Icon"))))
 				{
 					hasAnyValidProvider = true;
 				}
 
 				if (shortcutIconProvider.HasFlag(ShortcutIconProvider.Executable)
-					&& !string.IsNullOrEmpty(Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("exe"))))
+					&& !string.IsNullOrEmpty(Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("exe") ?? shortcut.Node.GetString("Exe"))))
 				{
 					hasAnyValidProvider = true;
 				}
@@ -3518,7 +3519,7 @@ namespace SteamGridManager.Frontend.WindowsFormsApp
 
 					if (File.Exists(userIconTestFullName))
 					{
-						Program.LogError($"{kvp.Key}: icon already exists ({shortcut.Node.GetString("appname")})");
+						Program.LogError($"{kvp.Key}: icon already exists ({(shortcut.Node.GetString("appname") ?? shortcut.Node.GetString("AppName"))})");
 						found = true;
 						break;
 					}
@@ -3531,10 +3532,10 @@ namespace SteamGridManager.Frontend.WindowsFormsApp
 
 				try
 				{
-					Program.LogError($"{kvp.Key}: icon is missing ({shortcut.Node.GetString("appname")})");
+					Program.LogError($"{kvp.Key}: icon is missing ({(shortcut.Node.GetString("appname") ?? shortcut.Node.GetString("AppName"))})");
 
-					var shortcutExecutable = Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("exe"));
-					var shortcutIcon = Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("icon"));
+					var shortcutExecutable = Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("exe") ?? shortcut.Node.GetString("Exe"));
+					var shortcutIcon = Steam.Vdf.Shortcut.GetStringWithoutQuotes(shortcut.Node.GetString("icon") ?? shortcut.Node.GetString("Icon"));
 					var userIconFullNameWithoutExtension = Path.Combine(SteamUtils.GetNonSteamAppIconCachePath(), appID.Value.ToString(CultureInfo.InvariantCulture) + (Properties.Settings.Default.Asset_NonSteamAppIcon_NameSuffix ?? ""));
 					var originalAssetFullName = shortcutIconProvider == ShortcutIconProvider.Executable
 						//&& Properties.Settings.Default.AllowProgramsAsIcon

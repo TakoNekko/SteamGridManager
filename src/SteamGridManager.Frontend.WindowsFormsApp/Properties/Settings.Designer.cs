@@ -1037,11 +1037,11 @@ namespace SteamGridManager.Frontend.WindowsFormsApp.Properties {
             "\n  <string>appinfo/depots/branches/\\w+/description</string>\r\n  <string>appinfo/u" +
             "fs/savefiles/\\d+/root</string>\r\n  <string>appinfo/ufs/savefiles/\\d+/path</string" +
             ">\r\n  <string>appinfo/ufs/savefiles/\\d+/pattern</string>\r\n  <string>appinfo/ufs/s" +
-            "avefiles/\\d+/platforms/\\d+</string>\r\n  <string>appname</string>\r\n  <string>exe</" +
-            "string>\r\n  <string>StartDir</string>\r\n  <string>icon</string>\r\n  <string>Shortcu" +
-            "tPath</string>\r\n  <string>LaunchOptions</string>\r\n  <string>DevkitGameID</string" +
-            ">\r\n  <string>FlatpakAppID</string>\r\n  <string>tags/\\d+</string>\r\n</ArrayOfString" +
-            ">")]
+            "avefiles/\\d+/platforms/\\d+</string>\r\n  <string>appname</string>\r\n  <string>AppNa" +
+            "me</string>\r\n  <string>exe</string>\r\n  <string>Exe</string>\r\n  <string>StartDir<" +
+            "/string>\r\n  <string>icon</string>\r\n  <string>Icon</string>\r\n  <string>ShortcutPa" +
+            "th</string>\r\n  <string>LaunchOptions</string>\r\n  <string>DevkitGameID</string>\r\n" +
+            "  <string>FlatpakAppID</string>\r\n  <string>tags/\\d+</string>\r\n</ArrayOfString>")]
         public global::System.Collections.Specialized.StringCollection VdfPropertyType_String_KnownPaths {
             get {
                 return ((global::System.Collections.Specialized.StringCollection)(this["VdfPropertyType_String_KnownPaths"]));
